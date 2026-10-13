@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'none'; font-src 'none'; connect-src 'none'; frame-src 'none'; worker-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>BẢN TIN SXKD</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/grist-plugin-api.js" defer></script>
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <main id="dashboard">
+    <header class="masthead"><div><span class="eyebrow">BẢN TIN SXKD</span><h1>Tổng quan sản xuất kinh doanh</h1><p id="period">Đang chờ dữ liệu Grist</p></div><span id="connection" class="status">Chưa kết nối</span></header>
+    <p id="message" role="status">Liên kết bảng tổng hợp và cho phép đọc bảng đã chọn.</p>
+    <section id="kpis" class="kpis" aria-label="Các chỉ tiêu"></section>
+    <section id="analysis" class="analysis" hidden>
+      <article class="panel"><h2>Kế hoạch và thực hiện tháng</h2><p class="muted" id="chart-unit"></p><div class="legend"><span><i class="plan"></i>Kế hoạch</span><span><i class="actual"></i>Thực hiện</span></div><div id="chart" class="chart"></div></article>
+      <article class="panel"><h2>Tiến độ doanh thu dịch vụ</h2><div id="progress" class="progress-list"></div></article>
+    </section>
+    <footer>Bản tin đơn vị: mở trang 02 - BẢN TIN ĐƠN VỊ để chọn đọc chi tiết.</footer>
+  </main>
+</body>
+</html>
